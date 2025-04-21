@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Z-index</title>
+        <style>
+            .d1
+            {
+                background-color: yellow;
+                position: relative;
+                z-index: 2;
+
+            }
+            .d2
+            {
+                background-color: blue;
+                position: fixed;
+                top: 100px;
+                left:100px;
+                z-index: 1;
+            }
+            .d3
+            {
+                background-color: orange;
+                position: fixed;
+                top: 200px;
+                left: 200px;
+                
+
+            }
+            div{
+                height: 150px;
+                width: 150px;
+                border: 2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="d1">
+
+        </div>
+        <div class="d2">
+            
+        </div>
+        <div class="d3">
+            
+        </div>
+    </body>
+</html>

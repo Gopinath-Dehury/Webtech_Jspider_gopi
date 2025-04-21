@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+            body{
+                background-color: rgb(0, 0, 0);
+            }
+        /* .container{
+        } */
+        .chakaAkhi{
+          position: relative;
+            margin: 20px auto 10px;
+            height: 65vh;
+            width: 25vw;
+            border: 15px double rgba(255, 255, 255, 0.651);
+            border-radius: 20px;
+            position: relative;
+            box-shadow: 10px 10px 500px rgb(255, 243, 6);
+            z-index: 1;
+
+        }
+        img{
+            height: inherit;
+            width: inherit;
+            border-radius: 0px;
+            
+        }
+
+
+        .left,.right{
+            background-color: rgba(0, 0, 0, 0.527);
+            height: inherit;
+            width: 46%; /*Half of the container it is taking*/
+            border-radius: 12px;
+            border: 10px dotted rgba(255, 255, 255, 0.692);
+            transition-duration:3s;
+            
+        }
+        .left{
+            position: absolute;
+            top: -10px;
+            left: 0px;
+        }
+        .right{
+            
+            position: absolute;
+            top: -10px;
+            right: 0px;
+            
+        }
+
+        .chakaAkhi:hover>.left{
+                transform: translateX(-30vh);/*It is controling the siding effect in x Axis*/
+                /* width: 0px; */
+                transition-duration:  3s ;
+        }
+        .chakaAkhi:hover>.right{
+            transform: translateX(+30vh);
+                /* width: 0px; */
+                transition-duration:  3s ;
+        }
+        .background-text {
+            position: absolute;
+            top: 130px;
+            left: 0px;
+            font-family: 'Poppins', sans-serif; /* Modern font */
+            font-size: 190px;
+            font-weight: 800; /* Bold text */
+            color: #ffd90086; /* Golden yellow for a divine feel */
+            text-transform: uppercase; /* Uppercase for emphasis */
+            /* letter-spacing: 1px; Spacing for elegance */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+            z-index: 1; /* Text stays behind */
+            opacity: 0.5; /* Slightly faded for depth */
+        }
+/* ----------------------------------------------------- */
+.player {
+  position: relative;
+      margin:auto;
+      width: 550px;
+      background: #110c0c4d;
+      padding: 13px;
+      border-radius: 20px;
+      box-shadow: 0 4px 80px rgba(81, 87, 2, 0.555);
+      text-align: center;
+      color: #ffffff;
+      font-size: 12px;
+      font-family: Arial, sans-serif;
+      z-index: 21;
+      opacity: 0.7;
+    }
+
+    .controls {
+      margin-top: 12px;
+      
+    }
+
+    button {
+      font-size: 23px;
+      padding: 9px 20px;
+      background: #0077cc65;
+      color: rgb(255, 255, 255);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      margin-top: 10px;
+    }
+    </style>
+</head>
+<body>
+  
+    <div class="container">
+      <span class="background-text">Jay Jagannath</span>        <div class="chakaAkhi">
+            <img src="lord-jagannath-1000x1000.png" alt="">
+        <div class="left"></div><!-- these are working as door for the web page -->
+        <div class="right"></div><!-- these are working as door for the web page -->
+        </div>
+    
+        
+    </div>
+    
+        <div class="player">
+            <h2>🎵 Dhani Thakura</h2>
+            <audio id="audio" src="Dhani-Thakura-(OdiaFresh.Com).mp3"></audio>
+          
+            <div class="controls">
+              <button id="playPause">▶️ Play</button>
+              <input type="range" id="seekbar" value="0">
+            </div>
+          </div>
+          
+          <script>
+            const audio = document.getElementById('audio');
+            const playPause = document.getElementById('playPause');
+            const seekbar = document.getElementById('seekbar');
+          
+            playPause.addEventListener('click', () => {
+              if (audio.paused) {
+                audio.play();
+                playPause.textContent = '⏸️ Pause';
+              } else {
+                audio.pause();
+                playPause.textContent = '▶️ Play';
+              }
+            });
+          
+            audio.addEventListener('timeupdate', () => {
+              seekbar.value = audio.currentTime;
+            });
+          
+            audio.addEventListener('loadedmetadata', () => {
+              seekbar.max = audio.duration;
+            });
+          
+            seekbar.addEventListener('input', () => {
+              audio.currentTime = seekbar.value;
+            });
+          </script>
+    
+    
+</body>
+</html>

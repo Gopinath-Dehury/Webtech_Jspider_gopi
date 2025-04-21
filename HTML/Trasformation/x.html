@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Audio Player</title>
+  <style>
+    .player {
+      width: 500px;
+      background: #e0f7fa;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .controls {
+      margin-top: 20px;
+    }
+
+    button {
+      font-size: 24px;
+      padding: 12px 30px;
+      background: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="player">
+        <h2>🎵 Dhani Thakura</h2>
+        <audio id="audio" src="Dhani-Thakura-(OdiaFresh.Com).mp3"></audio>
+      
+        <div class="controls">
+          <button id="playPause">▶️ Play</button>
+          <input type="range" id="seekbar" value="0">
+        </div>
+      </div>
+      
+      <script>
+        const audio = document.getElementById('audio');
+        const playPause = document.getElementById('playPause');
+        const seekbar = document.getElementById('seekbar');
+      
+        playPause.addEventListener('click', () => {
+          if (audio.paused) {
+            audio.play();
+            playPause.textContent = '⏸️ Pause';
+          } else {
+            audio.pause();
+            playPause.textContent = '▶️ Play';
+          }
+        });
+      
+        audio.addEventListener('timeupdate', () => {
+          seekbar.value = audio.currentTime;
+        });
+      
+        audio.addEventListener('loadedmetadata', () => {
+          seekbar.max = audio.duration;
+        });
+      
+        seekbar.addEventListener('input', () => {
+          audio.currentTime = seekbar.value;
+        });
+      </script>
+
+</body>
+</html>

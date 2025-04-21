@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>Drop-down</title>
+        <style>
+            b{
+                display: block;
+                color: orange;
+                text-decoration: none;
+                display: flex;
+                
+            }
+            .child{
+                
+                display: none;
+            }
+            .container{
+                background-color: brown;
+                color:white;
+                width: 80px;
+                position: relative;
+
+            }
+            .container:hover>.child{
+                display: block;
+                background-color: rgb(222, 222, 222);
+                width:160px;
+                text-align: center;
+                border-radius: 5px;
+                position: absolute;
+
+            }
+            .container:hover>.child{
+                display: block;
+                background-color: rgb(222, 222, 222);
+                width:160px;
+                text-align: center;
+                border-radius: 5px;
+                position: absolute;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+           <span>Global</span>
+           <div class="child">
+            <b href="">United Kingdom</b>
+            <b href="">United States</b>
+       </div>
+      
+    </div>
+    
+    </body>
+</html>

@@ -1,0 +1,219 @@
+*{
+    margin: 0px;
+}
+body{
+    background-color: rgb(235, 232, 232);
+}
+nav{
+
+}
+nav{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+nav>.item>a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin-right: 30px;
+    color: black;
+}
+nav>.item>a:hover{
+    color: orange;
+}
+nav>.item>h1{
+    font-size: 3rem;
+}
+nav>.item>h1::first-letter
+{
+    color: orange;
+    font-family: 'Courier New', Courier, monospace;
+}
+nav >#first{
+    margin-left: 100px;
+}
+/* ========================== */
+.container
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 4px;
+    
+
+}
+.container>.items{
+    background-color: brown;
+    color: white;
+    padding: 3px;
+}
+.container>.items>.child{
+    display: none;
+}
+.container>.items:hover>.child{
+    display: block;
+    position: absolute;
+    background-color: rgb(254, 251, 251);
+    border: none;
+    padding: 10px 5px;
+    margin-top: 4px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px gray;
+    height: auto;
+    width: 200px;
+}
+.container>.items>.child>a{
+    
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+    /* text-align: center; */
+    display: block;
+    height: 30px;
+}
+#last{
+    right: 10px;
+}
+/* ================= */
+.container1{
+    display: flex;
+    gap: 20px;
+    width: 98%;
+    margin: auto;
+    padding: 10px;
+   }
+   .container1>.items{
+    width: 33%;
+    /* border: 2px solid black; */
+    box-shadow: 0px 0px 5px black;
+    border-radius: 10px;
+    height: 400px;
+    background-color: white;
+   }
+   .container1>.d1{
+    background-image: url(https://t4.ftcdn.net/jpg/03/02/39/97/360_F_302399784_k69fNY2NhbWLYf3Xg4fUz50docoFAwjk.jpg);
+    background-size: cover;
+   }
+   .container1>.items>.childs{
+    background-color: rgb(223, 218, 218);
+    padding: 3px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+   }
+   /* ================ */
+   .d3{
+            
+    text-align: center;
+}
+.d3>span{
+display: block;
+background-color: rgb(83, 82, 82);
+color: white;
+text-align: center;
+margin: 6px 0px 5px;
+padding: 5px 0px;
+}
+
+.d3>button{
+padding: 5px 10px;
+border: none;
+border-radius: 5px;
+color: white;
+background-color: rgb(130, 127, 127);
+font-size: 1rem;
+
+}
+/* ================= */
+.container2{
+    display: flex;
+    gap: 4px;
+    justify-content: space-evenly;
+    width: 98%;
+    margin: auto;
+}
+.container2>.item{
+    height: 150px;
+    width: 250px;
+    border: none;
+    box-shadow: 0px 0px 5px gray;
+    text-align: center;
+    background-color: white;
+    
+}
+.container2>.item>h2{
+    background-color: rgb(71, 70, 70);
+    color: white;
+    padding: 7px 0px;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+.container2>.item>p{
+    padding: 3px 5px;
+}
+/* ================================ */
+.container3{
+    width: 80%;
+    margin: 20px auto;
+   }
+   .container3>.item{
+    background-color: white;
+    width: auto;
+    height: 200px;
+    text-align: center;
+   }
+   .container3>.item>h3{
+    background-color: rgb(73, 72, 72);
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+   .container3>.item>button{
+    margin-top: 40px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: medium;
+   }
+   /* ========================== */
+   .container4{
+    width: 85%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+   }
+   .container4>.items{
+    /* width: 350px; */
+    width: auto;
+    height: auto;
+    background-color: white;
+    
+    
+    
+    
+   }
+   .container4>.items>.logo{
+    display: flex;
+    height: 40px;
+    background-color: rgb(101, 101, 100);
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    box-shadow: 0px 0px 3px grey;
+    border-radius: 5px;
+    margin-bottom: 7px;
+   }
+   .container4>.items>button{
+    color: white;
+    background-color: rgb(128, 128, 128);
+    padding: 5px 25px;
+    text-align: center;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+   
+   }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display properties</title>
+    <style>
+        .container{
+            width: 60px;
+            height: 20px;
+            text-align: center;
+            position: absolute;
+            color: antiquewhite;
+            background-color: brown;
+            border-radius: 5px;
+        }
+        .container:hover>.child{
+            display: block;
+            text-align: center;
+            padding: 5px;
+            margin: 10px;
+            
+
+        }
+        .child{
+            width:150px ;
+            background-color: aliceblue;
+            display: none;
+            border-radius: 5px;
+           
+        }
+        a{
+            text-decoration: none;
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span>Global </span>
+        <div class="child">
+           <a href=""><span >United Kingdom</span></a> 
+            <a href=""><span >United States</span></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <span>Global </span>
+        <div class="chil2">
+           <a href=""><span >United Kingdom</span></a> 
+            <a href=""><span >United States</span></a>
+        </div>
+    </div>
+</body>
+</html>

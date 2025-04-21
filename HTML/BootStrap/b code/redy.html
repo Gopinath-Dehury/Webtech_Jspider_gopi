@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JSpiders Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: #fff;
+      padding: 10px 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #000;
+    }
+    .logo span {
+      color: orange;
+    }
+    .nav-links, .state-dropdowns {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-left: 20px;
+    }
+    .nav-links a, .state-dropdowns div {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      padding: 6px 10px;
+    }
+    .nav-links a:hover {
+      color: orange;
+    }
+    .nav-links a.active {
+      color: orange;
+      border-bottom: 2px solid orange;
+    }
+    .state-dropdowns div {
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .state {
+      padding: 6px 12px;
+      margin: 2px;
+    }
+    .contact {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-weight: bold;
+      color: orange;
+    }
+    .contact i {
+      margin-right: 5px;
+    }
+
+    /* Sample background colors for states */
+    .global { background-color: #c66; }
+    .online { background-color: #2d3e3f; }
+    .karnataka { background-color: #1f2d3d; }
+    .maharashtra { background-color: #3c3c3c; }
+    .tamil-nadu { background-color: #0f3e1e; }
+    .telangana { background-color: #1e3c58; }
+    .andhra-pradesh { background-color: #2f2f2f; }
+    .madhya-pradesh { background-color: #2d618a; }
+    .chandigarh { background-color: #8193a3; }
+    .haryana { background-color: #586b29; }
+    .odisha { background-color: #539aa3; }
+    .uttar-pradesh { background-color: #8c2a1b; }
+    .west-bengal { background-color: #8393a3; }
+    .new-delhi { background-color: #284f5b; }
+    .gujarat { background-color: #1d2b35; }
+    .kerala { background-color: #5e6360; }
+
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo"><span>J</span>Spiders<br><small style="font-size: 12px;">Training & Development Center</small></div>
+
+    <div class="nav-links">
+      <a href="#" class="active">🏠 Home</a>
+      <a href="#">📄 Courses</a>
+      <a href="#">📅 Batches</a>
+      <a href="#">👥 Corporates</a>
+      <a href="#">📍 Contact</a>
+      <a href="#">👨‍💼 Placements</a>
+      <a href="#">📝 Enquiry</a>
+    </div>
+
+    <div class="state-dropdowns">
+      <div class="state global">Global ⌄</div>
+      <div class="state online">Online ⌄</div>
+      <div class="state karnataka">Karnataka ⌄</div>
+      <div class="state maharashtra">Maharashtra ⌄</div>
+      <div class="state tamil-nadu">Tamil Nadu ⌄</div>
+      <div class="state telangana">Telangana ⌄</div>
+      <div class="state andhra-pradesh">Andhra Pradesh ⌄</div>
+      <div class="state madhya-pradesh">Madhya Pradesh ⌄</div>
+      <div class="state chandigarh">Chandigarh ⌄</div>
+      <div class="state haryana">Haryana ⌄</div>
+      <div class="state odisha">Odisha ⌄</div>
+      <div class="state uttar-pradesh">Uttar Pradesh ⌄</div>
+      <div class="state west-bengal">West Bengal ⌄</div>
+      <div class="state new-delhi">New Delhi ⌄</div>
+      <div class="state gujarat">Gujarat ⌄</div>
+      <div class="state kerala">Kerala ⌄</div>
+    </div>
+
+    <div class="contact">
+      <div>📞 +919686800700</div>
+      <div>📞 +916366110033</div>
+    </div>
+  </div>
+</body>
+</html>

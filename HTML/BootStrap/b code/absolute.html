@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Absolute position</title>
+    <style>
+    .child
+    {
+        border:2px solid black;
+        height: 100px;
+        margin: 50px auto;
+        background-color:blue;
+        width:100px;
+        top:100px;
+        position: absolute;
+    }
+    .parent
+    {
+        height: 200px;
+        margin:100px auto;
+        width: 300px;
+        border:2px solid red;
+        background-color: yellow;
+        position: relative;
+    }
+    .gp
+    {
+    height: 400px;
+    width:500px;
+    background-color: red;
+    border:2px solid blue;
+    position:relative;
+    }
+    </style>
+</head>
+<body>
+    <div class="gp">
+        <div class="parent">
+            <div class="child"></div>
+        
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.css">
+    <title>flipkart</title>
+    <style>
+        *{
+            margin: 3px;
+            
+        }
+        body{
+            background-color: rgb(236, 255, 255);
+        }
+        
+        .nav
+        {
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgb(236, 255, 255);
+            height: 60px;
+
+            
+        }
+        nav>.items{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+        }
+    
+        
+        nav>.items>span{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        input{
+            display: flex;
+          
+        }
+        .login>a{
+            text-decoration: none;
+            display: flex;
+            width: 100px;
+            border-radius: 5px;
+            padding: 7px;
+            color: rgb(0, 0, 0);
+            font-size: 19px;
+            font-weight: bold;
+        }
+        .login>a:hover{
+            background-color: rgba(4, 104, 219, 0.356);
+            color: rgb(0, 0, 0);
+            border-radius: 5px;
+        }
+        .i2{
+            display: none;;
+        }
+        .login:hover>a>.i2{
+            display: block;
+        }
+        .login:hover>a>.i1{
+            display: none;
+        }
+        nav>.items>.search>input{
+            display: flex;
+            align-items: center;
+            width: 329px;height: 18px;
+            border: none;
+            outline: none;
+            border-radius: 7px;
+            padding: 0px 5px;
+            background: transparent;
+       }
+       ::placeholder{
+        font-family: cursive;
+        font-size: 15px;
+       }
+        .search{
+            border: none;
+            border-radius: 10px;
+            padding: 15px 20px;
+            background-color: rgba(0, 153, 255, 0.13);
+        }
+        /* --------------------------------------------------- */
+
+        .container{
+            display: flex;
+            width: 95%;
+            margin: auto;
+            background-color: white;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 25px;
+        }
+
+       
+        .container>.img{
+            height: 70px;
+            
+            
+        }
+
+        .Poster{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+        }
+        .Poster>img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        .b1{
+           position: absolute;
+           top: 350px;
+           left: 17px;
+           padding: 18px;
+        }
+        .b2{
+            position: absolute;
+           top: 350px;
+           right: 17px;
+           padding: 18px;
+        }
+
+
+
+        .container1{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .pbox{
+            display: flex;
+            height: 250px;
+            width: 200px;
+            justify-content: center;
+            align-self:center;
+            border: 3px solid rgb(255, 174, 0);
+            background-color: yellow;
+            border-radius: 10px;
+            
+            
+
+        }
+        .i>img{
+
+            width: 150px;
+            height: 160px;
+           
+        }
+        .i>h4{
+            text-align: center;
+            background-color: rgba(208, 255, 0, 0.705);
+            border-radius: 5px;
+        }
+        .i>button{
+            margin-left: 35px;
+            width: 90px;  
+            color: rgb(255, 255, 255);
+            background-color: blue;          
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="items">
+            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" alt="flipkart>
+            
+        </div>
+        <div class="items">
+            <span class="search"><i class="fa-solid fa-magnifying-glass"></i><input  type="search" placeholder="Search for products, brands and more"></span>
+        </div>
+        <div class="items login">
+            <a href=""><i class="fa-regular fa-circle-user"></i> Login<i class="fa-solid fa-chevron-down i1"></i><i class="fa-solid fa-chevron-up i2"></i></a>
+        </div>
+        <div class="items">
+            <span><i class="fa-solid fa-cart-shopping"></i>Cart</Span> 
+        </div>
+        <div class="items">
+            <span><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" alt="">Become a Seller</span>
+        </div>
+        <div class="items">
+            <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="img"><img src="https://rukminim2.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100" alt=""><h3>Kilos</h3></div>
+        <div class="img"><img src="https://rukminim2.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100" alt=""><h3>Mobiles</h3></div>
+        <div class="img"><img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0d75b34f7d8fbcb3.png?q=100" alt=""><h3>Fasion</h3></div>
+        <div class="img"><img src="https://rukminim2.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100" alt=""><h3>Electronics</h3></div>
+        <div class="img"><img src="https://rukminim2.flixcart.com/flap/64/64/image/ab7e2b022a4587dd.jpg?q=100" alt=""><h3>Home & Furniture</h3></div>
+        <div class="img"><img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0139228b2f7eb413.jpg?q=100" alt=""><h3>Appliances</h3></div>
+        <div class="img"><img src="https://rukminim2.flixcart.com/flap/64/64/image/71050627a56b4693.png?q=100" alt=""><h3>Flights Booking</h3></div>
+        <div class="img"><img src="https://rukminim2.flixcart.com/flap/64/64/image/dff3f7adcf3a90c6.png?q=100" alt=""><h3>Beauty, Toys & More</h3></div>
+        <div class="img"><img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/05d708653beff580.png?q=100" alt=""><h3>Bikes</h3></div>
+
+    </div>
+
+    <div>
+        <div class="Poster"><img src="https://rukminim2.flixcart.com/fk-p-flap/1010/170/image/3d7827c92a670177.jpg?q=20" alt=""></div>
+        <button class="b1"><</button>
+        <button  class="b2">></button>
+    </div>
+    <div class="container1">
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        <div class="pbox">
+            <div class="i"><img src="image/man.png" alt="">
+            <h4>Price-500$</h4>
+            <button >Buy</button></div>
+        </div>
+        
+        
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.css">
+    <title>JSpider</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+
+        .s1{
+            background-color: rgb(255, 255, 255);
+        }
+        .nav{
+            display: inline-flex;
+            align-items: center;
+            border: 1px solid rgb(255, 255, 255);
+        }
+        .logo>img{
+            height: 60px;
+            width: 150px;
+        }
+        .opt{
+            display: inline-flex;
+            margin-left: 45px;
+            gap: 8px;
+            
+        }
+        .opt>a{
+            text-decoration: none;
+        }
+
+        .opt-child{
+            display: inline-flex;
+            padding: 9px;
+            font-size: 20px;
+
+        }
+        .opt>span{
+            color: orange;
+        }
+        .opt-child:hover{
+            background-color: #1b1203a8;
+            border-radius: 5px;
+            color: rgb(253, 165, 0);
+        }
+        .nav2{
+            display: flex;
+             background-color: rgb(255, 255, 255);
+        }
+        .nav2>button{
+            position: relative;
+            margin: auto;
+            padding: 5px;
+            color: #000000c2;
+            background-color: #e0d20b;
+            font-size: 15px;
+            border-radius: 15px;
+            border: 3px solid rgb(255, 0, 0);
+
+        }
+        .s2{
+            display: flex;
+            margin: 10px;
+            justify-content: space-evenly;
+            width: 98%;
+        }
+        .box{
+            height:400px;
+            width: 400px;
+            border: 5px solid yellow;
+            border-radius: 15px;
+            padding: 35px 10px;
+            margin-left: 15px;
+            font-size: 19px;
+            gap: 15px;
+            text-align: justify;
+            background:url(image/bxbg.jpg);
+        }
+        .box2text{
+            color: white;
+            
+        }
+
+        .box>button{
+            border: none;
+            background-color: aquamarine;
+            padding: 10px;
+            font-size: 18px;
+            margin:10px 8px;
+            border-radius: 10px;
+        
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <section class="s1">
+        <nav class="nav">
+            <div  class="logo"><img src="image/logo_jspiders.3b552d0.png" alt=""></div>
+            
+            <div class="opt">
+                <a href="" class="opt-child"><i class="fa-solid fa-house-user"></i></i>Home</a>
+                <a href="" class="opt-child"><i class="fa-solid fa-book"></i>Courses</a>
+                <a href="" class="opt-child"><i class="fa-solid fa-calendar-days"></i>Batches</a>
+                <a href="" class="opt-child"><i class="fa-solid fa-cubes"></i>Corporates</a>
+                <a href="" class="opt-child"><i class="fa-solid fa-map-location-dot"></i>Contact</a>
+                <a href="" class="opt-child"></i><i class="fa-solid fa-users-line"></i>Placements</a>
+                <span  class="opt-child"><i class="fa-solid fa-pen-to-square"></i>Enquiry</span>
+                <span  class="opt-child"><i class="fa-solid fa-square-phone"></i>+91-9876543210</span>
+                <span class="opt-child"><i class="fa-solid fa-square-phone"></i>+91-9876543211</span>
+            </div>
+        </nav>
+        <nav class="nav2">
+            <button>Global</button>
+            <button>Online</button>
+            <button>Karnataka</button>
+            <button>Tamil Nadu</button>
+            <button>Telengana</button>
+            <button>Andhra Pradesh</button>
+            <button>Madhya Pradesh</button>
+            <button>Chandigarh</button>
+            <button>Haryana</button>
+            <button>Odisha</button>
+            <button>Uttar Pradesh</button>
+            <button>West Bengal</button>
+            <button>New Delhi</button>
+            <button>Gujarat</button>
+            <button>Kerala</button>
+            <button>Bihar</button>
+        </nav>
+    </section>
+    <section class="s2">
+        <div class="box">
+                <h4 style="color: orange;" align="center"> <i class="fas fa-globe-asia mr-1"></i>LARGEST SOFTWARE TRAINING ORGANISATION <i class="fas fa-globe-asia mr-1"></i></h4><br>
+                <p> JSpiders is the world’s ace software course training organization with an aim to bridge the gap between the demands of the industry and the curriculum of educational institutions. </p><br>
+                <p>With centers across the Globe, the institute is a platform where young minds are given the opportunity to build successful careers.</p>        
+                <br> <p> "JSpiders is a place where businesses find talent and dreams take flight." </p>           
+        </div>
+        
+        <div class="box">
+            <h3 style="color: orange;" align="center"><i class="fas fa-users mr-1"></i>PLACEMENT STATISTICS<i class="fas fa-users mr-1"></i></h3> <br>
+            <section class="box2text">
+                <h4>266772 Placed Students who have throughout 60% aggregate</h4><br>
+                <h4>122972 Placed Students who have graduated in Non-IT</h4><br>
+                <h4>161728 Placed Students who have graduated in IT/CS/IS</h4><br>
+                <h4>28152 Placed Students who have less than 60% aggregate in Degree</h4>  
+            </section>
+                   
+        </div>
+
+            <div class="box">
+                <h4 style="color: orange;" align="center"> <i class="fas fa-user-tie mr-1"></i> PLACED STUDENTS <i class="fas fa-user-tie mr-1"></i></h4><br>
+                <h4 align="center" style="background-color: purple;">Year</h4>   
+                <button style="background-color: orange;">2025</button>  
+                <button>2024</button>  
+                <button>2023</button>  
+                <button>2022</button>  
+                <button>2021</button>  
+
+            </div>
+    </section>
+
+    
+    
+</body>
+</html>

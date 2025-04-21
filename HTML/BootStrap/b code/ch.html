@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>jspider</title>
+        <style>
+*{
+    margin: 0px;
+}
+body{
+    background-color: rgb(235, 232, 232);
+}
+
+nav{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+nav>.item>a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin-right: 30px;
+    color: black;
+}
+nav>.item>a:hover{
+    color: orange;
+}
+nav>.item>h1{
+    font-size: 3rem;
+}
+nav>.item>h1::first-letter
+{
+    color: orange;
+    font-family: 'Courier New', Courier, monospace;
+}
+nav >#first{
+    margin-left: 100px;
+}
+/* ========================== */
+.container
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 4px;
+    
+
+}
+.container>.items{
+    background-color: brown;
+    color: white;
+    padding: 3px;
+}
+.container>.items>.child{
+    display: none;
+}
+.container>.items:hover>.child{
+    display: block;
+    position: absolute;
+    background-color: rgb(254, 251, 251);
+    border: none;
+    padding: 10px 5px;
+    margin-top: 4px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px gray;
+    height: auto;
+    width: 200px;
+}
+.container>.items>.child>a{
+    
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+    /* text-align: center; */
+    display: block;
+    height: 30px;
+}
+#last{
+    right: 10px;
+}
+/* ================= */
+.container1{
+    display: flex;
+    gap: 20px;
+    width: 98%;
+    margin: auto;
+    padding: 10px;
+   }
+   .container1>.items{
+    width: 33%;
+    /* border: 2px solid black; */
+    box-shadow: 0px 0px 5px black;
+    border-radius: 10px;
+    height: 400px;
+    background-color: white;
+   }
+   .container1>.d1{
+    background-image: url(https://t4.ftcdn.net/jpg/03/02/39/97/360_F_302399784_k69fNY2NhbWLYf3Xg4fUz50docoFAwjk.jpg);
+    background-size: cover;
+   }
+   .container1>.items>.childs{
+    background-color: rgb(223, 218, 218);
+    padding: 3px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+   }
+   /* ================ */
+   .d3{
+            
+    text-align: center;
+}
+.d3>span{
+display: block;
+background-color: rgb(83, 82, 82);
+color: white;
+text-align: center;
+margin: 6px 0px 5px;
+padding: 5px 0px;
+}
+
+.d3>button{
+padding: 5px 10px;
+border: none;
+border-radius: 5px;
+color: white;
+background-color: rgb(130, 127, 127);
+font-size: 1rem;
+
+}
+/* ================= */
+.container2{
+    display: flex;
+    gap: 4px;
+    justify-content: space-evenly;
+    width: 98%;
+    margin: auto;
+}
+.container2>.item{
+    height: 150px;
+    width: 250px;
+    border: none;
+    box-shadow: 0px 0px 5px gray;
+    text-align: center;
+    background-color: white;
+    
+}
+.container2>.item>h2{
+    background-color: rgb(71, 70, 70);
+    color: white;
+    padding: 7px 0px;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+.container2>.item>p{
+    padding: 3px 5px;
+}
+/* ================================ */
+.container3{
+    width: 80%;
+    margin: 20px auto;
+   }
+   .container3>.item{
+    background-color: white;
+    width: auto;
+    height: 200px;
+    text-align: center;
+   }
+   .container3>.item>h3{
+    background-color: rgb(73, 72, 72);
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+   .container3>.item>button{
+    margin-top: 40px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: medium;
+   }
+   /* ========================== */
+   .container4{
+    width: 85%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+   }
+   .container4>.items{
+    /* width: 350px; */
+    width: auto;
+    height: auto;
+    background-color: white;
+    
+    
+    
+    
+   }
+   .container4>.items>.logo{
+    display: flex;
+    height: 40px;
+    background-color: rgb(101, 101, 100);
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    box-shadow: 0px 0px 3px grey;
+    border-radius: 5px;
+    margin-bottom: 7px;
+   }
+   .container4>.items>button{
+    color: white;
+    background-color: rgb(128, 128, 128);
+    padding: 5px 25px;
+    text-align: center;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+   
+   }
+   </style>
+   </head>
+</html>
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="jspider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../fontawsome/fontawesome-free-6.7.2-web/css/all.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="item" id="first">
+            <h1>jspider</h1>
+            <span>trainimg and development center</span>
+        </div>
+        <div class="item ">
+            <a href=""><i class="bi bi-house-door"></i>Home</a>
+            <a href=""><i class="bi bi-book"></i>Courses</a>
+            <a href=""><i class="bi bi-calendar"></i>Branches</a>
+            <a href=""><i class="bi bi-boxes"></i>Corporate</a>
+            <a href=""><i class="bi bi-people"></i>Placement</a>
+            <a href=""><i class="bi bi-pencil-square"></i>Enquire</a>
+            <a href="" style="color: orange;"><i class="bi bi-telephone"></i>+91-2394219247</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="items" style="background-color: rgb(209, 98, 98);">Global<i class="bi bi-caret-down-fill"></i>
+            <div class="child">
+                <a href="">United kingdom</a>
+              
+                <a href="">United State</a>
+            </div>
+        </div>
+        <div class="items" style="background-color: rgb(57, 80, 57);">Online<i class="bi bi-caret-down-fill"></i>
+            <div class="child">
+                <a href="">Online</a>
+            </div>
+        </div>
+        <div class="items" style="background-color: rgb(41, 37, 37);">Karnataka<i class="bi bi-caret-down-fill"></i>
+            <div class="child">
+                <a href="">Bengaluru-Basavanagudi</a>
+                <a href="">Bengaluru-Marathahalli</a>
+                <a href="">Mysore</a>
+                <a href="">Bengaluru-Rajajinagar</a>
+                <a href="">Bengaluru-Hebbal</a>
+                <a href="">Bengaluru-BTM Layout</a>
+            </div>
+        </div>
+        <div class="items" style="background-color: rgb(94, 92, 92);">Maharastra<i class="bi bi-caret-down-fill"></i>
+            <div class="child">
+                <a href="">Pune-Deccan Gymkhana</a>
+                <a href="">Pune-Hadapsar</a>
+                <a href="">Pune-Wakad</a>
+                <a href="">Navi-Mumbai</a>
+                <a href="">Mumbai-Thane</a>
+                <a href="">Vasai-Virar Mumbai</a>
+            </div>
+        </div>
+        <div class="items" style="background-color: rgb(23, 80, 23);">Tamil Nadu<i class="bi bi-caret-down-fill"></i>
+            <div class="child">
+                <a href="">Chennai-Chromepet</a>
+                <a href="">Chennai-Vadapalani</a>
+                <a href="">Chennai-Velachery</a>
+            </div>
+        </div>
+        <div class="items" style="background-color: rgb(37, 37, 71);">Telengana<i class="bi bi-caret-down-fill"></i>
+            <div class="child">
+                <a href="">Hyderabad-JNTU</a>
+                <a href="">Hyderabad-Punjagutta</a>
+                <a href="">Dilsukhnagar</a>
+            </div>
+        </div>
+        <div class="items" style="background-color: black;">Andhra pradesh<i class="bi bi-caret-down-fill"></i>
+            <div class="child">
+                <a href="">Tirupati</a>
+            </div>
+        </div>
+        <div class="items" style="background-color: rgb(37, 37, 71);">Madhya Pradesh<i class="bi bi-caret-down-fill"></i>
+            <div class="child">
+                <a href="" style="height: 1px;"></a>
+            </div>
+        </div>
+        <div class="items" style="background-color: rgb(67, 69, 71);">Chandigarh<i class="bi bi-caret-down-fill"></i>
+            <div class="child">
+                <a href="">Chandigarh-Online</a>
+            </div>
+        </div>
+        <div class="items" style="background-color: rgb(120, 185, 211);">Odisha<i class="bi bi-caret-down-fill"></i>
+            <div class="child">
+                <a href="">Bhubaneswar</a>
+            </div>
+        </div>
+        <div class="items" style="background-color: rgb(40, 92, 40);">Hariyana<i class="bi bi-caret-down-fill"></i>
+            <div class="child">
+                <a href="">Gurugram</a>
+            </div>
+        </div>
+        <div class="items">Utter pradesh<i class="bi bi-caret-down-fill"></i>
+            <div class="child">
+                <a href="">Noida</a>
+            </div>
+        </div>
+        <div class="items" style="background-color: rgb(94, 92, 92);">West Bengal<i class="bi bi-caret-down-fill"></i>
+            <div class="child">
+                <a href="">J-Kolkata</a>
+            </div>
+        </div>
+        <div class="items" style="background-color: rgb(32, 68, 53);">New Delhi<i class="bi bi-caret-down-fill"></i>
+            <div class="child">
+                <a href="">Delhi</a>
+            </div>
+        </div>
+        <div class="items" style="background-color: rgb(37, 37, 37);">Gujurat<i class="bi bi-caret-down-fill"></i>
+            <div class="child">
+                <a href="">Ahmedabad</a>
+            </div>
+        </div>
+        <div class="items" style="background-color: rgb(94, 92, 92);">Kerala<i class="bi bi-caret-down-fill"></i>
+            <div class="child" id="last">
+                <a href="" >Kochi-Kerala</a>
+            </div>
+        </div>
+        <div class="items" style="background-color:white; width: 60px;">
+        </div>
+    </div>
+    <div class="container1">
+        <div class="items d1">
+            <h4 style="color: orange; text-align: center; margin-top: 10px;" ><i class="bi bi-globe-central-south-asia"></i> LARGEST SOFTWARE TRAINING AND ORGANIGATION <i class="bi bi-globe-central-south-asia"></i></h4>
+            <p style="color: white; padding: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aliquam non eaque pariatur consequuntur. Qui aliquam rerum doloribus quae doloremque itaque ipsam dolores in error, corrupti laborum similique temporibus distinctio?</p>
+            <p style="color: white; padding: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aliquam non eaque pariatur consequuntur. Qui aliquam rerum doloribus quae doloremque itaque ipsam dolores in error, corrupti laborum similique temporibus distinctio?</p>
+            <p style="color: white; padding: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aliquam non eaque pariatur consequuntur. Qui aliquam rerum doloribus quae doloremque itaque ipsam dolores in error, corrupti laborum similique temporibus distinctio?</p>
+        </div>
+        <div class="items d2">
+            <h4 style="color: orange; text-align: center; margin-top: 10px;"><i class="bi bi-people-fill"></i> PLACEMNET STATIC <i class="bi bi-people-fill"></i></h4>
+            <div class="childs" style="font-size: 1.3rem;">
+                <span style="color: orange;"><i class="bi bi-sort-up"></i>266772</span>placed student who have through 60% aggregate
+            </div>
+            <div class="childs" style="font-size: 1.3rem;">
+                <span style="color: orange;"><i class="bi bi-sort-up"></i>266772</span>placed student who have through 60% aggregate
+            </div>
+            <div class="childs" style="font-size: 1.3rem;">
+                <span style="color: orange;"><i class="bi bi-sort-up"></i>266772</span>placed student who have through 60% aggregate
+            </div>
+            <div class="childs" style="font-size: 1.3rem;">
+                <span style="color: orange;"><i class="bi bi-sort-up"></i>266772</span>placed student who have through 60% aggregate
+            </div>
+        </div>
+        <div class="items d3">
+            <h4 style="color: orange; text-align: center; margin-top: 10px;"><i class="fa-solid fa-user-tie"></i>  PLACED STUDENT  <i class="fa-solid fa-user-tie"></i> </h4>
+            <span>Year</span>
+            <button style="background-color: orange; color: white;">2025</button>
+            <button>2024</button>
+            <button>2023</button>
+            <button>2022</button>
+            <button>2021</button>
+            <span>Degre</span>
+            <button style="background-color: orange;">BE/BTECH</button>
+            <button style="background-color: orange;">BSC/BCA</button>
+            <span>Master</span>
+            <button style="background-color: orange;">ME/MTECH</button>
+            <button style="background-color: orange;">MSC/MCA</button>
+            <br>
+            <button style="margin-top: 20px; padding: 10px;"> <i class="fa-solid fa-people-group" style="padding: 0px 5px;"></i>Want to hire our students</button>
+        </div>
+        
+    </div>
+    <div class="container2">
+        <div class="item">
+            <h2 style="color: orange;"><i class="bi bi-star-fill"></i> No.1 <i class="bi bi-star-fill"></i></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="item">
+            <h2 style="color: orange;"><i class="bi bi-star-fill"></i> No.1 <i class="bi bi-star-fill"></i></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="item">
+            <h2 style="color: orange;"><i class="bi bi-star-fill"></i> No.1 <i class="bi bi-star-fill"></i></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="item">
+            <h2 style="color: orange;"><i class="bi bi-star-fill"></i> No.1 <i class="bi bi-star-fill"></i></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="item">
+            <h2 style="color: orange;"><i class="bi bi-star-fill"></i> No.1 <i class="bi bi-star-fill"></i></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="item">
+            <h2 style="color: orange;"><i class="bi bi-star-fill"></i> No.1 <i class="bi bi-star-fill"></i></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="item">
+            <h3>Courses</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas culpa enim id necessitatibus magnam amet debitis hic a reiciendis.</p>
+            <p style="color: orange; margin-top: 20px; font-weight: bold;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, blanditiis.</p>
+            <button style="background-color: orange; color: white;">Java Full Stack</button>
+            <button style="background-color: gray; color: white;">Software Testing</button>
+            <button style="background-color: orange; color: white;">MEAN or MERN</button>
+            <button style="background-color: gray; color: white;">Python Full Stack</button>
+        </div>
+    </div>
+    <div class="container4" >
+        <div class="items" style="width: 350px;">
+            <div class="logo">
+                <h4 style="height: 15px;">Java Full Stack</h4>
+                <div class="image" >
+                    <img src="https://api.qspiders.com/media/course_images/java_WHh6rBH.png" alt="" style="height: 35px;">
+                    <img src="https://api.qspiders.com/media/course_images/java_WHh6rBH.png" alt="" style="height: 35px;">
+                    <img src="https://api.qspiders.com/media/course_images/db_Wwy8rz0.png" alt="" style="height: 35px;">
+                    <img src="https://api.qspiders.com/media/course_images/spring3.png" alt="" style="height: 35px;">
+                </div>
+            </div>
+            <p style="line-height: 22px; margin-bottom: 70px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quae illum iste consectetur nesciunt laudantium ut, voluptas repudiandae error ratione.</p>
+            <button style="background-color: orange;"><i class="bi bi-book-fill"></i> Details</button>
+            <button><i class="bi bi-person-fill-add"></i> Enroll</button>
+            <button><i class="bi bi-calendar-event-fill"></i> Batches</button>
+        </div>
+        <div class="items" style="width: 350px;">
+            <div class="logo">
+                <h4 style="height: 15px;">Java Full Stack</h4>
+                <div class="image" >
+                    <img src="https://api.qspiders.com/media/course_images/java_WHh6rBH.png" alt="" style="height: 35px;">
+                    <img src="https://api.qspiders.com/media/course_images/java_WHh6rBH.png" alt="" style="height: 35px;">
+                    <img src="https://api.qspiders.com/media/course_images/db_Wwy8rz0.png" alt="" style="height: 35px;">
+                    <img src="https://api.qspiders.com/media/course_images/spring3.png" alt="" style="height: 35px;">
+                </div>
+            </div>
+            <p style="line-height: 22px; margin-bottom: 70px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quae illum iste consectetur nesciunt laudantium ut, voluptas repudiandae error ratione.</p>
+            <button style="background-color: orange;"><i class="bi bi-book-fill"></i> Details</button>
+            <button><i class="bi bi-person-fill-add"></i> Enroll</button>
+            <button><i class="bi bi-calendar-event-fill"></i> Batches</button>
+        </div>
+        <div class="items" style="width: 350px;">
+            <div class="logo">
+                <h4 style="height: 15px;">Java Full Stack</h4>
+                <div class="image" >
+                    <img src="https://api.qspiders.com/media/course_images/java_WHh6rBH.png" alt="" style="height: 35px;">
+                    <img src="https://api.qspiders.com/media/course_images/java_WHh6rBH.png" alt="" style="height: 35px;">
+                    <img src="https://api.qspiders.com/media/course_images/db_Wwy8rz0.png" alt="" style="height: 35px;">
+                    <img src="https://api.qspiders.com/media/course_images/spring3.png" alt="" style="height: 35px;">
+                </div>
+            </div>
+            <p style="line-height: 22px; margin-bottom: 70px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quae illum iste consectetur nesciunt laudantium ut, voluptas repudiandae error ratione.</p>
+            <button style="background-color: orange;"><i class="bi bi-book-fill"></i> Details</button>
+            <button><i class="bi bi-person-fill-add"></i> Enroll</button>
+            <button><i class="bi bi-calendar-event-fill"></i> Batches</button>
+        </div>
+       
+    </div>
+</body>
+</html>
