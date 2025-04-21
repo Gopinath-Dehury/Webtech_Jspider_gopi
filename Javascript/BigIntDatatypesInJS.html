@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    let a=87325434535545344444344454454544435n
+    console.log(a+100n,typeof a)
+//     BigInt is a built-in data type that lets you work with integers larger than Number.MAX_SAFE_INTEGER, which is:
+// Number.MAX_SAFE_INTEGER === 9007199254740991  // (2^53 - 1)
+// If you go beyond this, regular Number values start to lose precision.
+
+// 📦 Use Case: Why BigInt?
+// When working with:
+// 1-->Cryptography
+// 2-->Financial calculations
+// 3-->Scientific computations
+// 4-->Very large dataset IDs or timestamps
+// 5-->Blockchain or databases that use large integers
+
+
+// ✅ How to Create a BigInt
+// You can create a BigInt in two ways:
+
+// 1. Add n at the end of a number
+// const big = 1234567890123456789012345678901234567890n;
+// 2. Use the BigInt() constructor
+// const big = BigInt("1234567890123456789012345678901234567890");
+// 🔧 How to Use I
+// const a = 1234567890123456789012345678901234567890n;
+// const b = 1000000000000000000000000000000000000000n;
+// const sum = a + b;
+// console.log(sum); // 2234567890123456789012345678901234567890n
+
+// console.log(typeof sum); // "bigint"
+
+// 🛑 Important Things to Know
+// Rule	                                Details
+// ❌ Cannot mix BigInt with Number	    BigInt + Number throws an error
+// ✅ Must convert explicitly	        Use Number(bigint) or BigInt(number)
+// 🚫 No decimals	                    BigInt is only for integers, not floats
+
+
+
+// Example of Error
+// const a = 10n;
+// const b = 5;
+// console.log(a + b); // ❌ TypeError
+// ✅ Fix:
+// console.log(a + BigInt(b)); // ✅ 15n
+
+
+// ✅ Benefits of BigInt
+// Precision for very large numbers
+// Safe operations beyond the limit of Number
+// Native support in modern JavaScript (ES2020+)
+
+// 🎯 Summary
+// Feature     	            BigInt
+// Type	                "bigint"
+// Can store   	        Arbitrarily large integers
+// Used for	             Big numbers in finance, crypto, databases
+// Syntax	                123n or BigInt("123")
+// Can’t mix with	        Regular numbers directly
+// Decimal support	        ❌ No (integers only)
+
+</script>
+</html>
+
