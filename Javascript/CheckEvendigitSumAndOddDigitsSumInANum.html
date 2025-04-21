@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Check Even digit Sum And Odd Digits Sum In A Number if same return true else false</h1>
+</body>
+<script>
+    let num=+prompt("Enter the Number :")
+    let temp=num;
+    let EvenSum=0;
+    let OddSum=0;
+    console.log(num,typeof num)
+
+    while(temp>0){
+        let rem=temp%10;
+        if(rem%2==0) EvenSum+=rem;
+        else OddSum+=rem;
+        temp=Math.trunc(temp/10);
+    }
+
+    if(EvenSum==OddSum){
+        console.log(`EvenSum-->${EvenSum} and OddSum -->${OddSum} its same`)
+    }else{
+        console.log(`EvenSum-->${EvenSum} and OddSum -->${OddSum} its not same`)
+
+    }
+
+</script>
+</html>
