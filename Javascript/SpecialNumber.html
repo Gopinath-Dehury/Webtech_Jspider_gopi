@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpecialNumber</title>
+</head>
+<body>
+    <h1>SpecialNumber</h1>
+</body>
+<script>
+let start=+prompt("enter start range :")
+    let end=+prompt("enter end range :")
+    for(let i=start;i<=end;i++){
+    //let num=+prompt("enter number :")//59
+    let num=i;
+    let sum=0,mul=1,temp=num;
+    while(temp>0){
+        let rem=temp%10;
+        sum+=rem;
+        mul*=rem;
+        temp=Math.trunc(temp/10)
+    }
+    let total=sum+mul;
+    if(total==num){
+        console.log(`${num} is a Special Number`)
+    }
+    // else{
+    //     console.log(`${num} is a NOT Special Number`)
+
+    // }
+}
+    
+
+
+</script>
+</html>

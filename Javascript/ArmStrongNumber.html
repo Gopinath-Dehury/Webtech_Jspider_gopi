@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArmStrongNumber</title>
+</head>
+<body>
+    <h1>ArmStrong Number</h1>
+    <p>ArmStrong number is number where the sum of Each digit to the power its length of number is same as Number itself <br>
+    Example 153 here numbers length is 3 <br>
+    and sum of 1*1*1=1 <br>
+                5*5*5=125
+                3*3*3=27
+                1+27+125=153
+                
+                so its digit multiply by it self for length number of times and then add all and store in sum variable <br>
+                if sum==num then its ArmStrong  number
+</p>
+</body>
+<script>
+    let num=+prompt("Enter number : ")
+    let temp=num,sum=0,count=0;
+    while(temp>0){
+        count++;
+        temp=Math.trunc(temp/10)
+    }
+    temp=num;
+    while(temp>0){
+        let rem=temp%10;
+        let fact=1;
+        for(let i=1;i<=count;i++){
+            fact*=rem;
+        }
+        sum+=fact;
+        temp=Math.trunc(temp/10);
+    }
+
+        if(num==sum){
+            console.log(`${num} is a ArmStrong Number.`)
+        }else{
+            console.log(`${num} is a NOT ArmStrong Number.`)
+        }
+
+</script>
+</html>

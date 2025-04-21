@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>StrongNumber check using JS</h1>
+    <p>Stong number is a special number whom Sum of factorials of all digits is equals to number it self .example <br>
+    145=1+24+120 <br>1-1 
+    <br>4-24 <br>5=120  </p>
+</body>
+<script>
+    let start=+prompt("enter start range :")
+    let end=+prompt("enter end range :")
+
+    for(let i=start;i<=end;i++){
+        let num=i;
+    let sum=0;let temp=num;
+    while(temp>0){
+        let rem=temp%10;
+        let fact=1;
+        while(rem>0){
+            fact*=rem;
+            rem--;
+        }
+        sum+=fact;
+        temp=Math.trunc(temp/10);
+    }
+    if(num==sum){
+        console.log(`${num} is Strong Number.`)
+    }
+    // else{
+    //     console.log(`${num} is NOT a Strong Number.`)
+
+    // }
+    }
+
+
+</script>
+</html>
