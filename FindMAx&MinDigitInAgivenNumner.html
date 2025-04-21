@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>find maximum digit and minimum digit in a number using JavaScriptand length of number</h1>
+</body>
+<script>
+    let num=76568;
+    let temp=num;
+    let count=0;
+    let min=9;
+    let max=0;
+    while(temp>0){
+        count++;
+        let rem=temp%10;
+        if(rem<min){
+            min=rem;
+        }
+        if(rem>max){
+            max=rem;
+        }
+        temp=Math.trunc(temp/10);
+    }
+    console.log(`In ${num} the maximum digits is ${max} and minimum digit is ${min}`)
+    console.log(`Digits present in the number is ${count} digits`)
+</script>
+</html>
