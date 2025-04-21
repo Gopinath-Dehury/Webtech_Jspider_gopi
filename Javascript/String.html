@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let str="Gopinath"
+    console.log(str,typeof str)
+    str='Gopinath'
+    console.log(str,typeof str)
+    str=`Gopinath`
+    console.log(str,typeof str)
+    str=+"123"
+    //The unary + is a shortcut to convert values to numbers, and JavaScript coerces the type accordingly using internal rules.
+    console.log(str,typeof str)
+    str=+"abc"
+    // If the value is already a number → returns the number.
+    // If the value is a string (like "123") → tries to convert it to a number.
+    // If the value can’t be converted (like "abc") → returns NaN (Not a Number).
+    console.log(str,typeof str)
+
+</script>
+</html>
